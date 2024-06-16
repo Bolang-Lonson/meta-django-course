@@ -125,7 +125,7 @@ celerybeat.pid
 .env
 .venv
 .cfg
-tutorial-env/
+virtual-env/
 venv/
 ENV/
 env.bak/
