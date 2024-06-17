@@ -1,7 +1,7 @@
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpRequest, HttpResponse, HttpResponseNotFound
 
-def handler404(request, exception:Exception) -> HttpResponse:
-    return HttpResponse("404: Page Not Found! <br><br> <button href='/home/'>Go to Homepage</button>")
+def handler404(request:HttpRequest, exception:Exception) -> HttpResponse:
+    return HttpResponse("404: Page Not Found! <br><br> <a href='/home/'><button>Go to Homepage</button></a>")
 
 
 def home(request) -> HttpResponseNotFound:
